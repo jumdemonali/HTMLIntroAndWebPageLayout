@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .headContainer{
+            display: flex;
+            flex-flow:column;
+            align-content: center;
+            background: chocolate;
+            font-weight: bold;
+            padding: 15px;
+        }
+        .footerContainer{
+            display: flex;
+            background:darkgreen;
+            align-content: center;
+            padding: 15px;
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 1px seagreen;
+        }
+        .sideBarLeftItem{
+            border-color: sienna;
+            order: 1;
+        }
+        .sideBarRightItem{
+            border-color: blue;
+            order: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <header class="headContainer">Header Sample FlexBox Example</header>
+    </div>
+    <sidebar class="sideBarItem sideBarLeftItem">Left Side Bar</sidebar>
+    <sidebar class="sideBarItem sideBarRightItem">Right Side Bar</sidebar>
+    <div>
+    <footer class="footerContainer">Footer</Footer>
+    </div>
+</body>
+</html>
